@@ -3,25 +3,74 @@
 <head>
 <meta charset="utf-8">
 <title>HTML 1</title>
+<style>
+	
+	td{background-color: yellow}
+	
+	.Names{background-color: slateblue;}
+	
+	table, th, td {
+		border: 1px solid black;
+	}	
+
+		h1 {color:gray;}
+		p{; color:violet;}
+	
+	</style>
 </head>
 
 <body>
-	<h1>Supercars</h1>
+<h1>Supercars</h1>
 	<hr>
 	<img src="images/supercarslogo.jpg" alt="Generic car logo">
-	<h2>How fast can they go?</h2>
-	<p><b>Super cars are usually considered works of art due to their appearence and </b> <i title="art due to their appearence and speed." style="color: red">speed.</i> </p>
-	<hr>
-	<h3><em>Lexus LFA</em></h3>
+<h2>How fast can they go?</h2> 
+	<p style="color: mediumseagreen"><b>Super cars are usually considered works of art due to their appearence and </b> <i title="art due to their appearence and speed." style="color: red">speed.</i> </p>
+<hr>
+<h3 class="Names"><em>Lexus LFA</em></h3>
 	<img src="images/lexuslfa.jpg" alt="Photo of Lexus LFA super car">
 	<p>Cars like the one above made by Lexus can hit tops speeds of around <i title="202mph." style="color: red">202mph. </i></p>
-	<hr>
-	<h3><em>Nissan GTR 50</em></h3>
+<hr>
+<h3 class="Names"><em><a href="NissanGtr50.html">Nissan GTR 50</a></em></h3>
 	<img src="images/nissangtr50.jpg" alt="Photo of upcoming Nissan GTR 50">
-	<p>Meanwhile the new super car from Nissan is expected to hit speeds of <i title="+210mph." style="color: red">+210mph. </i></p>
-	<hr>
-	<h3><em>Noble m600</em></h3>
+	<p>Meanwhile the new super car from Nissan is expected to hit speeds of <i title="+210mph." style="color: red; font-size: 33px">+210mph. </i></p>
+<hr>
+<h3 class="Names"><em>Noble m600</em></h3>
 <img src="images/noblem600.jpg" alt="Photo of the 2020 Noble m600">
 <p>We're only faster the folks! the British have a supercar that can hit a consistant top speed of <i title="215mph" style="color: red">215mph</i> and sometimes hitting speeds of <i title="225mph" style="color: red">225mph</i></p>
+	
+<h3 id="Vrooom"></h3>
+	
+<table style="width: 90%">
+	<tr>
+		<th>Make</th>
+		<th>Model</th>
+		<th>Speed</th>
+	</tr>
+	<tr>
+		<td><a href="https://youtu.be/5BvVM1OdMUk">Lexus</a></td>
+		<td>LFA</td>
+		<td>202mph</td>
+	</tr>
+	<tr>
+		<td><a href="Nissan.html">Nissan</a></td>
+		<td>Gtr 50</td>
+		<td>210mph</td>
+	</tr>
+	<tr>
+		<td><a href="https://youtu.be/rmAvVZP7OG0">Noble</a></td>
+		<td>M600</td>
+		<td>215mph</td>
+		</tr>	
+		
+</table>
+<h1>Fastest to slowest supercars mentioned above</h1>
+<ul>
+	<li>Noble M600</li>
+	<li>Nissan Gtr 50</li>
+	<li>Lexus LFA</li>
+</ul>
 </body>
+   <script>
+	document.getElementById("Vrooom").innerHTML = "Table of Speed"
+	</script>
 </html>
